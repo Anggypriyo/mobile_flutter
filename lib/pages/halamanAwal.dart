@@ -38,13 +38,11 @@ class firstPage extends StatelessWidget{
               ),
             ),
             Container(
-              padding: EdgeInsets.only(top: 75),
-              child: TextButton(
-                style: ButtonStyle(
-                  foregroundColor: MaterialStateProperty.all(Colors.white),
-                  backgroundColor: MaterialStateProperty.all(Colors.blueAccent),
-
-                ),
+              padding: EdgeInsets.only(top: 35),
+              child: MaterialButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(40)
+                  ),
                 onPressed: () {
                   Navigator.push(
                       context, 
@@ -55,11 +53,14 @@ class firstPage extends StatelessWidget{
                       )
                   );
                 },
+                  color: Colors.lightBlueAccent,
                 child : Container(
+
                   padding: EdgeInsets.all(10),
-                  child: Text('Get Started',
+                  child: Text('Mulai Menjelajah',
                     style: new TextStyle(
-                      fontSize: 20,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
                     ),textAlign: TextAlign.center,
                   ),
                 )
@@ -70,7 +71,7 @@ class firstPage extends StatelessWidget{
               children:<Widget> [
                 Container(
                   padding: EdgeInsets.only(top: 20),
-                  child: Text("Already have an account ? "),
+                  child: Text("Sudah punya akun ? "),
                 ),
                 GestureDetector(
                   onTap: (){
@@ -78,7 +79,7 @@ class firstPage extends StatelessWidget{
                   },
                   child: Container(
                     padding: EdgeInsets.only(top: 20),
-                    child: Text('Sign in',
+                    child: Text('Masuk',
                       style: TextStyle(
                           color: Colors.purple
                       ),

@@ -1,5 +1,5 @@
 
-import 'package:bioskop_app/pages/home.dart';
+import 'package:bioskop_app/pages/genre.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -27,14 +27,14 @@ class LoginPage extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Text ("Login", style: TextStyle(
+                    Text ("CGV Login", style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),),
                     SizedBox(height: 20,),
-                    Text("Welcome back ! Login with your credentials",style: TextStyle(
+                    Text("Welcome Mensore !",style: TextStyle(
                       fontSize: 15,
-                      color: Colors.grey[700],
+                      color: Colors.black,
                     ),),
                     SizedBox(height: 30,)
                   ],
@@ -73,8 +73,8 @@ class LoginPage extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(40)
                       ),
-                      child: Text("Login",style: TextStyle(
-                          fontWeight: FontWeight.w600,fontSize: 16,color: Colors.white70
+                      child: Text("Masuk",style: TextStyle(
+                          fontWeight: FontWeight.w600,fontSize: 16,color: Colors.black
                       ),),
                     ),
                   ),
@@ -85,7 +85,7 @@ class LoginPage extends StatelessWidget {
                   children:<Widget> [
                     Container(
                       padding: EdgeInsets.only(top: 20),
-                      child: Text("Dont have an account ? "),
+                      child: Text("Tidak Punya Akun? "),
                     ),
                     GestureDetector(
                       onTap: (){
@@ -93,7 +93,7 @@ class LoginPage extends StatelessWidget {
                       },
                       child: Container(
                         padding: EdgeInsets.only(top: 20),
-                        child: Text('Sign Up',
+                        child: Text('Daftar',
                           style: TextStyle(
                               color: Colors.purple
                           ),

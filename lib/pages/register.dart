@@ -29,12 +29,12 @@ class SignupPage extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Text ("Sign up", style: TextStyle(
+                        Text ("Daftar", style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
                         ),),
                         SizedBox(height: 20,),
-                        Text("Create an Account,Its free",style: TextStyle(
+                        Text("Buat akun, Gratis",style: TextStyle(
                           fontSize: 15,
                           color: Colors.grey[700],
                         ),),
@@ -60,7 +60,7 @@ class SignupPage extends StatelessWidget {
                         children: [
                           makeInput(label: "Email"),
                           makeInput(label: "Password",obsureText: true),
-                          makeInput(label: "Confirm Pasword",obsureText: true)
+                          makeInput(label: "Confirm Password",obsureText: true)
                         ],
                       ),
                     ),
@@ -85,7 +85,7 @@ class SignupPage extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(40)
                           ),
-                          child: Text("Sign Up",style: TextStyle(
+                          child: Text("Daftar",style: TextStyle(
                             fontWeight: FontWeight.w600,fontSize: 16,
 
                           ),),
@@ -96,14 +96,14 @@ class SignupPage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Already have an account? "),
+                        Text("Sudah punya akun? "),
                         GestureDetector(
                           onTap: (){
                             Navigator.pushNamed(context, '/loginpage');
                           },
                           child: Container(
 
-                            child: Text('Login',
+                            child: Text('Masuk',
                               style: TextStyle(
                                   color: Colors.purple
                               ),

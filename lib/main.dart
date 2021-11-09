@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'pages/halamanAwal.dart';
 import 'pages/register.dart';
-import 'pages/home.dart';
+import 'pages/genre.dart';
 void main() {
   runApp(MyApp());
 }
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
         routes: {
         '/loginpage': (context) => LoginPage(),
           '/singpage': (context) => SignupPage(),
-          '/cinemapage': (context) => Home(),
+          '/cinemapage': (context) => GenrePage(),
         }
     );
   }
